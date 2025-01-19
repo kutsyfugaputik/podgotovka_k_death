@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Моя семья – мой космос</title>
+    <link rel="stylesheet" href="css/style-light.css">
+</head>
+<body>
+    <!-- Шапка -->
+    <header class="header">
+        <div class="container">
+            <div class="logo">Моя семья – мой космос</div>
+            <nav class="menu">
+                <a href="registration.html">Регистрация</a>
+                <a href="#auth">Авторизация</a>
+                <a href="account.html">Личный кабинет</a>
+                <a href="#about">О нас</a>
+                <a href="#competitions">Конкурсы</a>
+                <a href="#search">Поиск</a>
+                <a href="#contacts">Контакты</a>
+                <button id="theme-toggle">Сменить тему</button>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Блок слайдера -->
+    <section class="slider">
+        <h2>Популярные конкурсы</h2>
+        <div class="slider-wrapper">
+            <div class="slide">
+                <img src="media/images/contest1.jpg" alt="Конкурс 1">
+                <p>Описание конкурса 1</p>
+                <div class="rating">★★★★☆</div>
+                <button>Подробнее</button>
+            </div>
+            <!-- Другие слайды -->
+        </div>
+    </section>
+
+    <!-- Блок авторизации -->
+    <section id="auth" class="auth">
+        <h2>Авторизация</h2>
+        <form>
+            <input type="email" placeholder="E-mail">
+            <input type="password" placeholder="Пароль">
+            <button>Войти</button>
+            <a href="#">Забыли пароль?</a>
+        </form>
+    </section>
+
+    <!-- Блок "О нас" -->
+    <section id="about" class="about">
+        <h2>О нас</h2>
+        <p>Текст из файла about.txt</p>
+        <img src="media/images/about.jpg" alt="О компании">
+    </section>
+
+    <!-- Блок приветствия -->
+    <section class="welcome">
+        <h2>Приветствие от организаторов</h2>
+        <video src="media/video/hello.mp4" controls></video>
+    </section>
+
+    <!-- Блок конкурсов -->
+    <section id="competitions" class="competitions">
+        <h2>Конкурсы</h2>
+        <div class="competition-cards">
+            <div class="card">
+                <img src="media/images/contest1.jpg" alt="Конкурс">
+                <h3>Конкурс 1</h3>
+                <p>Описание конкурса</p>
+                <p>Записей: 10</p>
+                <div class="rating">★★★★☆</div>
+                <button>Записаться</button>
+            </div>
+            <!-- Другие карточки -->
+        </div>
+    </section>
+
+    <!-- Поле поиска -->
+    <section id="search" class="search">
+        <h2>Поиск конкурсов</h2>
+        <form>
+            <input type="text" placeholder="Введите название">
+            <button>Поиск</button>
+        </form>
+    </section>
+
+    <!-- Блок отзывов -->
+    <section class="feedback">
+        <h2>Отзывы</h2>
+        <div class="feedback-slider">
+            <div class="feedback-slide">
+                <img src="media/images/user1.jpg" alt="Автор">
+                <p>Текст отзыва</p>
+                <span>Имя автора</span>
+                <span>Дата</span>
+            </div>
+            <!-- Другие отзывы -->
+        </div>
+    </section>
+
+    <!-- Подписка -->
+    <section class="subscribe">
+        <h2>Подписаться на новости</h2>
+        <form>
+            <input type="email" placeholder="E-mail">
+            <label>
+                <input type="checkbox"> Согласие на обработку данных
+            </label>
+            <button>Подписаться</button>
+        </form>
+    </section>
+
+    <!-- Подвал -->
+    <footer id="contacts" class="footer">
+        <p>+7 (4842) 23-45-67</p>
+        <p><a href="mailto:family@cosmos.ru">family@cosmos.ru</a></p>
+        <nav>
+            <a href="index.html">Главная</a>
+            <a href="index-light.html">Главная (светлая)</a>
+            <a href="registration.html">Регистрация</a>
+            <a href="404.html">Страница не найдена</a>
+        </nav>
+    </footer>
+</body>
+</html>

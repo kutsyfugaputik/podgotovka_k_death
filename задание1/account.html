@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Личный кабинет</title>
+    <link rel="stylesheet" href="css/style-dark.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="logo">Моя семья – мой космос</div>
+            <nav class="menu">
+                <a href="index.html">Главная</a>
+                <a href="index-light.html">Главная (светлая)</a>
+                <a href="registration.html">Регистрация</a>
+                <a href="404.html">Страница не найдена</a>
+            </nav>
+        </div>
+    </header>
+
+    <section class="account">
+        <h2>Личный кабинет</h2>
+        <form>
+            <label for="competitions">Выберите конкурс:</label>
+            <select id="competitions" name="competitions">
+                <option value="contest1">Конкурс 1</option>
+                <!-- Добавьте другие конкурсы -->
+            </select>
+
+            <label for="date">Дата:</label>
+            <input type="date" id="date" name="date" value="2024-07-08" readonly>
+
+            <label for="time">Время:</label>
+            <select id="time" name="time">
+                <option value="9:00">9:00</option>
+                <!-- Добавьте другие интервалы времени -->
+            </select>
+
+            <label for="participants">Количество участников:</label>
+            <input type="number" id="participants" name="participants" min="1" required>
+
+            <button type="submit">Записаться на конкурс</button>
+        </form>
+    </section>
+
+    <footer class="footer">
+        <p>+7 (4842) 23-45-67</p>
+        <p><a href="mailto:family@cosmos.ru">family@cosmos.ru</a></p>
+    </footer>
+</body>
+</html>

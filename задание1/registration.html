@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Регистрация</title>
+    <link rel="stylesheet" href="css/style-dark.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="logo">Моя семья – мой космос</div>
+            <nav class="menu">
+                <a href="index.html">Главная</a>
+                <a href="index-light.html">Главная (светлая)</a>
+                <a href="account.html">Личный кабинет</a>
+            </nav>
+        </div>
+    </header>
+
+    <section class="registration">
+        <h2>Регистрация</h2>
+        <form id="registration-form">
+            <input type="email" placeholder="E-mail" required>
+            <input type="text" placeholder="Имя" required>
+            <input type="text" placeholder="Фамилия" required>
+            <input type="number" placeholder="Возраст" min="1" required>
+            <select required>
+                <option value="male">Мужской</option>
+                <option value="female">Женский</option>
+            </select>
+            <input type="password" placeholder="Пароль" required>
+            <input type="password" placeholder="Повторите пароль" required>
+            <input type="file" placeholder="Загрузить семейную фотографию" accept="image/*">
+            <label>
+                <input type="checkbox" required> Согласие на обработку данных
+            </label>
+            <button type="submit">Зарегистрироваться</button>
+        </form>
+    </section>
+
+    <footer class="footer">
+        <p>+7 (4842) 23-45-67</p>
+        <p><a href="mailto:family@cosmos.ru">family@cosmos.ru</a></p>
+    </footer>
+</body>
+</html>
