@@ -13,7 +13,17 @@
     --rating-color: gold;
     --font-size: 18px;
 }
-
+.slider {
+	
+	height: inherit;
+	overflow: hidden;
+	position: relative;
+	width: inherit;
+	-webkit-box-shadow: 0 0 20px rgba(0, 0, 0, .5);
+	-moz-box-shadow: 0 0 20px rgba(0, 0, 0, .5);
+	-o-box-shadow: 0 0 20px rgba(0, 0, 0, .5);
+	box-shadow: 0 0 20px rgba(0, 0, 0, .5);
+}
 body {
     background-color: var(--bg-color);
     color: var(--text-color);
@@ -26,6 +36,12 @@ body {
     font-size: var(--font-size);
     line-height: 1.5;
     transition: background-color 0.3s, color 0.3s;
+}
+
+main{
+padding: 7%;
+flex-wrap: wrap;
+
 }
 
 a {
@@ -115,7 +131,7 @@ input:focus {
     overflow-x: auto;
     gap: 30px;
     animation: slideIn 1s ease-in-out;
-    margin-bottom: 60px;
+    margin-bottom: 25px;
 }
 
 @keyframes fadeIn {
